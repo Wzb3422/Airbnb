@@ -18,12 +18,25 @@
   /*transition: left 2s;*/
 }
 div.swiper img {
-  width: 50%;
+  width: 3.75rem;
   height: 100%;
   float: left;
 }
 .Airbnb-icon {
+  height: .32rem;
+  width: .32rem;
   position: absolute;
   top: .24rem;
   left: .24rem;
+  color: #fff;
+  font-size: .3rem;
+}
+.user-icon {
+  height: .32rem;
+  width: .32rem;
+  position: absolute;
+  top: .24rem;
+  right: .24rem;
+  color: #fff;
+  font-size: .3rem;
 }
