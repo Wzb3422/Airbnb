@@ -46,7 +46,7 @@ function moveControl() {
     afterMove()
   }, 4000)
 }
-setInterval(function () {
-  console.log('interval')
-  moveControl()
-}, 5000)
+// setInterval(function () {
+//   console.log('interval')
+//   moveControl()
+// }, 5000)
