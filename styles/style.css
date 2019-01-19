@@ -1,0 +1,29 @@
+.swiper {
+  width: 100%;
+  height: 3rem;
+  overflow: hidden;
+}
+.content {
+  width: 200%;
+  height: 100%;
+  position: relative;
+  left: 0%;
+  transition: left 2s;
+}
+.noTran {
+  width: 200%;
+  height: 100%;
+  position: relative;
+  left: 0%;
+  /*transition: left 2s;*/
+}
+div.swiper img {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.Airbnb-icon {
+  position: absolute;
+  top: .24rem;
+  left: .24rem;
+}
