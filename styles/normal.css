@@ -5,3 +5,10 @@ body {
   padding: 0;
   margin: 0;
 }
+input {
+  outline: none;
+  border: none;
+}
+div::-webkit-scrollbar {
+  display: none;
+}
