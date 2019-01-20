@@ -21,3 +21,15 @@
 + Airbnb添加至心愿单功能开发
 + Airbnb登录状态与信息管理
 + 足够精细的动画与样式
+
+## 使用的JavaScript知识
++ DOM   
+   + document.createElement()
+   + document.getElementById()
+   + document.innerText
+   + document.querySelector()
++ NODE
+   + node.appendChild()
+   + node.className
+   + node.classList.add()
+   + node.style
