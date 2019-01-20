@@ -26,16 +26,19 @@ function afterMove() {
 }
 function whichObj() {
   let obj1 =  {
+    id: 1,
     imgURL: './imgaes/swiper1.jpg',
     itemText: '爱彼迎新春特惠\n缤纷礼包,尽兴旅行',
     itemBtn: '领取千元礼包'
   }
   let obj2 = {
+    id: 2,
     imgURL: './imgaes/swiper2.jpg',
     itemText: '大理慢生活\n留下全家的温暖回忆',
     itemBtn: '查看合集'
   }
   let obj3 = {
+    id: 3,
     imgURL: './imgaes/swiper3.jpg',
     itemText: '住进「山水间」\n在民居中亲近自然',
     itemBtn: '查看指南'
@@ -59,17 +62,29 @@ function moveControl() {
     document.querySelector('.noTran').className = 'content'
   }
   let obj = whichObj()
+  showLoadingBar(obj.id)
   beforeMove(obj)
   move()
   setTimeout(function () {
     afterMove()
   }, 4000)
 }
+showLoadingBar(1)
 setInterval(function () {
   moveControl()
-}, 5000)
+}, 8000)
 function createDiv(className) {
   let div = document.createElement('div')
   div.className = className
   return div
+}
+function showLoadingBar(id) {
+  let selector = '#bar' + id.toString()
+  let bar = document.querySelector(selector)
+  let innerBar = createDiv('loadingBar')
+  innerBar.classList.add('animated', 'slideInLeft')
+  bar.appendChild(innerBar)
+  setTimeout(function () {
+    bar.removeChild(bar.firstChild)
+  }, 8000)
 }
